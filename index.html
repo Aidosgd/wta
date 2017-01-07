@@ -9,7 +9,9 @@
 <body>
 
 <div class="header">
-	<img src="images/header.png" alt="">
+	<div class="header-overflow">
+		<img src="images/header.png" alt="">
+	</div>	
 </div>
 <div class="main-slider">
 	<div class="overflow-block">
@@ -40,23 +42,23 @@
 					</div>
 				</div>
 				<div class="items-list">
-					<div class="item first" data-parallax='{"y": 0, "from-scroll": 405, "to-scroll": 400, "easing": "easeOutElastic"}'>
+					<div class="item first" data-parallax='{"y": -230, "smoothness": 10}'>
 						<img src="images/events1.png" class="events1" alt="">
 					</div>
-					<div class="item second">
-						<img src="images/events3.png" class="events3" alt="">
+					<div class="item second" data-parallax='{"y": -230}'>
+						<img src="images/events3.png" style="width: 80%; float: right;" class="events3" alt="">
 					</div>
-					<div class="item third">
+					<div class="item third" data-parallax='{"y": -230}'>
 						<img src="images/events4.png" class="events4" alt="">
 					</div>
 					<div style="clear: both"></div>
-					<div class="item fourth">
+					<div class="item fourth" data-parallax='{"y": -230}'>
 						<img src="images/events2.png" class="events2" alt="">
 					</div>
 					<div style="clear: both"></div>
 				</div>
 
-				<img src="images/history-astana.png" alt="">
+				<img src="images/history-astana.png" style="width: 100%;" alt="">
 			</section>
 			<section id="sights">
 				<div class="container">
@@ -71,7 +73,7 @@
 					<div class="item first">
 						<img src="images/sights1.png" class="events1" alt="">
 					</div>
-					<div class="item second" style="transform: translateX(-20%);">
+					<div class="item second">
 						<img src="images/sights2.png" class="events3" alt="">
 					</div>
 					<div class="item third">
@@ -80,21 +82,37 @@
 					<div style="clear: both"></div>
 				</div>
 
-				<img src="images/two-banks.png" style="margin-top: 230px;" alt="">
+				<img src="images/two-banks.png" style="margin-top: 230px; width: 100%;" alt="">
 			</section>
-			<section id="where-to-stay" style="height: 400px">
+			<section id="where-to-stay">
 				<div class="container">
 					<h1 style="margin-top: 90px;">Где остановиться</h1>
+					<img src="images/search.png" style="width: 50%" alt="">
 				</div>
-				<img src="images/search.png" alt="">
-			</section>
-			<section id="where-to-eat" style="height: 400px">
-				<div class="container">
-					<h1 style="margin-top: 90px;">Где поесть</h1>
+			
+				<div class="items-list">
+					<div class="item first">
+						<img src="images/wts1.png">
+					</div>
+					<div class="item second">
+						<img src="images/wts2.png">
+					</div>
+					<div class="item third">
+						<img src="images/wts3.png">
+					</div>
+					<div style="clear: both;"></div>
 				</div>
 			</section>
-			<section id="subscription">
-				Subscription
+			<section id="where-to-eat">
+				<div class="row">
+					<div class="col-1-2">
+						<img src="images/wte.png" style="height: 400px">
+					</div>
+					<div class="col-1-2">
+						<img src="images/subs.png" style="height: 400px">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 			</section>
 		</div>
 		<div class="right-menu">

@@ -7,6 +7,10 @@
   font-style: normal;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   font-family: 'Museo Sans Cyrl';
@@ -24,25 +28,31 @@ body{
   right: 0;
   top: 0;
   height: 56px;
-  img{
-    display: block;
+  .header-overflow{
+    width: 1175px; 
+    overflow: hidden;
     margin: auto;
-  }
+    img{
+      display: block;
+      margin: auto;      
+      margin-left: -127px;
+    }
+  }  
 }
 .main-slider{
   position: relative;
   .overflow-block{
     overflow: hidden;
-    height: 720px;
+    max-height: 720px;
   }
-  .wta-video{
-    transform: translateY(-20%);
-  }
+  // .wta-video{
+  //   transform: translateY(-20%);
+  // }
   .video-controls{
     position: absolute;
     bottom: 0;
     left: 50%;
-    margin-left: 430px;
+    margin-left: 315px;
   }
   .wta{
     width: 453px;
@@ -65,18 +75,21 @@ body{
 }
 .map-img{
   position: fixed;
-  right: 10%;
+  right: 50%;
+  margin-right: -640px;
   bottom: 23%;
 }
 .wrapper{
+  width: 100%;
   .container{
-    width: 1400px;
+    width: 1175px;
     margin: auto;
   }
   .left-content{
     float: left;
-    width: 1175px;
+    width: 950px;
     border-right: 1px solid #f3f3f3;
+    overflow: hidden;
     .container{
       margin-left: 135px;
       width: 1040px;
@@ -88,7 +101,7 @@ body{
   }
   .right-menu{
     float: right;
-    width: 224px;
+    width: 225px;
     .navigation{
       margin-top: 100px;
       padding: 0;
@@ -130,7 +143,7 @@ section{
     color: black;
     font-size: 16px;
     line-height: 26px;
-    margin-left: 288px;
+    margin-left: 158px;
     width: 535px;
     a{
       color: #156dff;
@@ -158,20 +171,26 @@ section{
       position: relative;
       width: 33.3%;
       float: left;
+      padding: 15px;
+      img{
+        width: 100%;
+      }
       &.first{
-        top: 0px;
+        top: 100px;
+        width: 25%;
+        padding-left: 0;
       }
       &.second{
-        top: 200px;
+        top: 300px;
+        width: 40%;
       }
       &.third{
-        top: 240px;
-        img{
-          width: 100%;
-        }
+        top: 340px;
+        width: 35%;        
+        padding-right: 0;
       }
       &.fourth{
-        top: -40px;
+        top: 40px;
         img{
           width: 80%;
           float: right;
@@ -180,7 +199,37 @@ section{
       }
     }
   }
+} 
+#where-to-stay{
+  .items-list{
+    margin-top: 0;
+    margin-bottom: 100px;
+    .item{
+      &.first{
+        width: 38%;
+        top: 90px;
+      }
+      &.second{
+        width: 37%;
+        top: 10px;
+      }
+      &.third{
+        padding-top: 0;
+        padding-right: 0;
+        width: 25%;
+        top: -10px;
+      }
+    }
+  }
 }
-#events{
 
+.row{
+  width: 100%;
+  .col-1-2{
+    width: 50%;
+    float: left;
+    img{
+      width: 100%;
+    }
+  }
 }
